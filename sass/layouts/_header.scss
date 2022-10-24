@@ -1,0 +1,14 @@
+.header {
+}
+
+.navigation {
+  display: none;
+
+  @include table-min {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+  }
+}
