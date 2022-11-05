@@ -1,292 +1,348 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Templates</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="conteiner">
-        <!-- Mobile menu button -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Templates</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="conteiner">
+                <!-- Mobile menu button -->
 
-        <button
-          type="button"
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="24" height="16" class="menu-toggle__svg">
-            <use xlink:href="./img/sprite.svg#icon-mobal-menu"></use>
-          </svg>
-        </button>
+                <button
+                    type="button"
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg width="24" height="16" class="menu-toggle__svg">
+                        <use
+                            xlink:href="./img/sprite.svg#icon-mobal-menu"
+                        ></use>
+                    </svg>
+                </button>
 
-        <!-- Navigation site -->
+                <!-- Navigation site -->
 
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a href="" class="navigation__link navigation__link--current link"
-                >Головна</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link link">Наші проекти</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link link">Послуги</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link link">Новини</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+                <nav class="navigation">
+                    <ul class="navigation__list list">
+                        <li class="navigation__item">
+                            <a
+                                href=""
+                                class="navigation__link navigation__link--current link"
+                                >Головна</a
+                            >
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link link"
+                                >Наші проекти</a
+                            >
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link link">Послуги</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link link">Новини</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
 
-        <!-- Mobile move menu button -->
-        <div class="conteiner-menu js-menu-container" id="mobile-menu">
-          <button type="button" class="menu-toggle js-close-menu">
-            <svg width="19" height="19" class="menu-toggle__svg">
-              <use xlink:href="./img/sprite.svg#icon-modal-menu-close"></use>
-            </svg>
-          </button>
+                <!-- Mobile move menu button -->
+                <div class="conteiner-menu js-menu-container" id="mobile-menu">
+                    <button type="button" class="menu-toggle js-close-menu">
+                        <svg width="19" height="19" class="menu-toggle__svg">
+                            <use
+                                xlink:href="./img/sprite.svg#icon-modal-menu-close"
+                            ></use>
+                        </svg>
+                    </button>
 
-          <!-- Navigation -->
-          <nav class="navigation-mobile">
-            <ul class="navigation-mobile__list list">
-              <li class="navigation-mobile__item">
-                <a href="" class="navigation-mobile__link link">Головна</a>
-              </li>
-              <li class="navigation-mobile__item">
-                <a href="" class="navigation-mobile__link link">Наші проекти</a>
-              </li>
-              <li class="navigation-mobile__item">
-                <a href="" class="navigation-mobile__link link">Послуги</a>
-              </li>
-              <li class="navigation-mobile__item">
-                <a href="" class="navigation-mobile__link link">Новини</a>
-              </li>
-              <li class="navigation-mobile__item">
-                <a href="" class="navigation-mobile__link link">Контакти</a>
-              </li>
+                    <!-- Navigation -->
+                    <nav class="navigation-mobile">
+                        <ul class="navigation-mobile__list list">
+                            <li class="navigation-mobile__item">
+                                <a href="" class="navigation-mobile__link link"
+                                    >Головна</a
+                                >
+                            </li>
+                            <li class="navigation-mobile__item">
+                                <a href="" class="navigation-mobile__link link"
+                                    >Наші проекти</a
+                                >
+                            </li>
+                            <li class="navigation-mobile__item">
+                                <a href="" class="navigation-mobile__link link"
+                                    >Послуги</a
+                                >
+                            </li>
+                            <li class="navigation-mobile__item">
+                                <a href="" class="navigation-mobile__link link"
+                                    >Новини</a
+                                >
+                            </li>
+                            <li class="navigation-mobile__item">
+                                <a href="" class="navigation-mobile__link link"
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Link social  -->
+                    <ul class="mobil-menu-social list">
+                        <li class="mobil-menu-social__item">
+                            <a href="" class="mobil-menu-social__link link"
+                                >LinkedIn</a
+                            >
+                        </li>
+                        <li class="mobil-menu-social__item">
+                            <a href="" class="mobil-menu-social__link link"
+                                >Instagram</a
+                            >
+                        </li>
+                        <li class="mobil-menu-social__item">
+                            <a href="" class="mobil-menu-social__link link"
+                                >Facebook</a
+                            >
+                        </li>
+                        <li class="mobil-menu-social__item">
+                            <a href="" class="mobil-menu-social__link link"
+                                >Twitter</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero hero--bgc">
+                <p class="hero__text">Передова IT студія</p>
+                <h1 class="hero__title">
+                    Ми створюємо легкі рішення важких задач і проблем
+                </h1>
+                <button type="submit" class="button btn">Наші проекти</button>
+            </section>
+
+            <!-- Functions -->
+            <section class="functions">
+                <div class="conteiner">
+                    <h2
+                        class="functions__title functions__title--moving-bottom"
+                    >
+                        Ми створюємо мобільні додатки для великих корпорацій
+                    </h2>
+                    <p class="functions__text functions__text--moving-bottom">
+                        Lorem Ipsum - це текст-"риба", що часто використовується
+                        в пресі та веб-дизайні. Lorem Ipsum є стандартною
+                        "рибою" для текстів на латиниці з початку XVI ст.
+                    </p>
+                    <ul class="functions__list list">
+                        <li class="functions__item">
+                            <div class="card-functions">
+                                <div class="card-functions__pre">
+                                    <svg
+                                        width="40"
+                                        height="40"
+                                        class="card-functions__svg"
+                                    >
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-icon-functions"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="functions__pre-titile">
+                                Створення сайтів
+                            </h3>
+                            <p class="functions__pre-text">
+                                Lorem Ipsum - це текст-"риба", часто
+                                використовує у пресі та веб-дизайні.
+                            </p>
+                        </li>
+                        <li class="functions__item">
+                            <h3 class="functions__pre-titile">
+                                Створення сайтів
+                            </h3>
+                            <p class="functions__pre-text">
+                                Lorem Ipsum - це текст-"риба", часто
+                                використовує у пресі та веб-дизайні.
+                            </p>
+                        </li>
+                        <li class="functions__item">
+                            <h3 class="functions__pre-titile">
+                                Створення сайтів
+                            </h3>
+                            <p class="functions__pre-text">
+                                Lorem Ipsum - це текст-"риба", часто
+                                використовує у пресі та веб-дизайні.
+                            </p>
+                        </li>
+                    </ul>
+                    <button>Всі послуги</button>
+                </div>
+            </section>
+
+            <!-- Advances -->
+            <section>
+                <h2>Високі стандарти розробки</h2>
+                <p>
+                    Lorem Ipsum - це текст-"риба", що часто використовується в
+                    пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
+                    текстів на латиниці з початку XVI ст.
+                </p>
+                <a href="">Детальніше про компанію</a>
+                <img src="" alt="" />
+                <ul>
+                    <li>
+                        <p>125</p>
+                        <p>Our projects</p>
+                    </li>
+                    <li>
+                        <p>125</p>
+                        <p>Our projects</p>
+                    </li>
+                    <li>
+                        <p>125</p>
+                        <p>Our projects</p>
+                    </li>
+                    <li>
+                        <p>125</p>
+                        <p>Our projects</p>
+                    </li>
+                    <li>
+                        <p>125</p>
+                        <p>Our projects</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Work -->
+            <section>
+                <h2>Наші роботи на яких ми спеціалізуємось</h2>
+                <button>Всі послуги</button>
+                <ul>
+                    <li>
+                        <img src="" alt="" />
+                        <h3>01. Дослідження і упаковка</h3>
+                        <p>
+                            Lorem Ipsum - це текст-"риба", що часто
+                            використовується в пресі та веб-дизайні. Lorem Ipsum
+                            є стандартною "рибою" для текстів на латиниці з
+                            початку XVI ст.
+                        </p>
+                        <a href="">Детальніше</a>
+                    </li>
+                    <li>
+                        <img src="" alt="" />
+                        <h3>01. Дослідження і упаковка</h3>
+                        <p>
+                            Lorem Ipsum - це текст-"риба", що часто
+                            використовується в пресі та веб-дизайні. Lorem Ipsum
+                            є стандартною "рибою" для текстів на латиниці з
+                            початку XVI ст.
+                        </p>
+                        <a href="">Детальніше</a>
+                    </li>
+                    <li>
+                        <img src="" alt="" />
+                        <h3>01. Дослідження і упаковка</h3>
+                        <p>
+                            Lorem Ipsum - це текст-"риба", що часто
+                            використовується в пресі та веб-дизайні. Lorem Ipsum
+                            є стандартною "рибою" для текстів на латиниці з
+                            початку XVI ст.
+                        </p>
+                        <a href="">Детальніше</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Project -->
+            <section>
+                <h2>Наші проекти</h2>
+                <p>
+                    Lorem Ipsum - це текст-"риба", що часто використовується в
+                    пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
+                    текстів на латиниці з початку XVI ст.
+                </p>
+                <ul>
+                    <li><img src="" alt="" /></li>
+                    <li><img src="" alt="" /></li>
+                    <li><img src="" alt="" /></li>
+                </ul>
+                <button>Всі проекти</button>
+            </section>
+
+            <!-- Video -->
+            <section>
+                <h2>Відео про нашу роботу</h2>
+                <p>Просто подивіться, як ми працюємо</p>
+                <video src=""></video>
+
+                <h3>Підпишіться на нашу розсилку</h3>
+                <p>Корисні статті, акції, новини - отримайте все це зараз!</p>
+                <form action=""></form>
+                <button>Підписатися</button>
+                <p>Ми не шлем спам, і не передаємо нікому ваші дані</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <ul>
+                <li>
+                    <h3>Контактная информация</h3>
+                    <a href="">test@test.ru</a><a href="">+3 8096 555 66 99</a
+                    ><a href="">Тернопіль вул С. Бандери</a>
+                </li>
+                <li>
+                    <h3>Основні посилання</h3>
+                    <a href="">Головна</a><a href="">Наші проекти</a
+                    ><a href="">Наші послуги</a><a href="">Контакти</a>
+                </li>
+                <li>
+                    <h3>Наші проекти</h3>
+                    <a href="">Укрпошта</a><a href="">Нафтогаз</a
+                    ><a href="">Львівська пивоварня</a><a href="">ТЭЦ Калуша</a>
+                </li>
+                <li>
+                    <h3>Соціальні мережі</h3>
+                    <a href="">LinkedIn</a><a href="">Instagram</a
+                    ><a href="">Facebook</a><a href="">Twitter</a>
+                </li>
             </ul>
-          </nav>
+            <b>(с) 2019. Всі права захищені</b>
+        </footer>
 
-          <!-- Link social  -->
-          <ul class="mobil-menu-social list">
-            <li class="mobil-menu-social__item">
-              <a href="" class="mobil-menu-social__link link">LinkedIn</a>
-            </li>
-            <li class="mobil-menu-social__item">
-              <a href="" class="mobil-menu-social__link link">Instagram</a>
-            </li>
-            <li class="mobil-menu-social__item">
-              <a href="" class="mobil-menu-social__link link">Facebook</a>
-            </li>
-            <li class="mobil-menu-social__item">
-              <a href="" class="mobil-menu-social__link link">Twitter</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+        <!-- Java script -->
 
-    <main>
-      <!-- Hero -->
-      <section class="hero hero--bgc">
-        <p class="hero__text">Передова IT студія</p>
-        <h1 class="hero__title">
-          Ми створюємо легкі рішення важких задач і проблем
-        </h1>
-        <button type="submit" class="button btn">Наші проекти</button>
-      </section>
-
-      <!-- Functions -->
-      <section>
-        <h2>Ми створюємо мобільні додатки для великих корпорацій</h2>
-        <p>
-          Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
-          веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці
-          з початку XVI ст.
-        </p>
-        <ul>
-          <li>
-            <h3>Створення сайтів</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", часто використовує у пресі та
-              веб-дизайні.
-            </p>
-          </li>
-          <li>
-            <h3>Створення сайтів</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", часто використовує у пресі та
-              веб-дизайні.
-            </p>
-          </li>
-          <li>
-            <h3>Створення сайтів</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", часто використовує у пресі та
-              веб-дизайні.
-            </p>
-          </li>
-        </ul>
-        <button>Всі послуги</button>
-      </section>
-
-      <!-- Advances -->
-      <section>
-        <h2>Високі стандарти розробки</h2>
-        <p>
-          Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
-          веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці
-          з початку XVI ст.
-        </p>
-        <a href="">Детальніше про компанію</a>
-        <img src="" alt="" />
-        <ul>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-          <li>
-            <p>125</p>
-            <p>Our projects</p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Work -->
-      <section>
-        <h2>Наші роботи на яких ми спеціалізуємось</h2>
-        <button>Всі послуги</button>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <h3>01. Дослідження і упаковка</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-              та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-              латиниці з початку XVI ст.
-            </p>
-            <a href="">Детальніше</a>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h3>01. Дослідження і упаковка</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-              та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-              латиниці з початку XVI ст.
-            </p>
-            <a href="">Детальніше</a>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h3>01. Дослідження і упаковка</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-              та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-              латиниці з початку XVI ст.
-            </p>
-            <a href="">Детальніше</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Project -->
-      <section>
-        <h2>Наші проекти</h2>
-        <p>
-          Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
-          веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці
-          з початку XVI ст.
-        </p>
-        <ul>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-        </ul>
-        <button>Всі проекти</button>
-      </section>
-
-      <!-- Video -->
-      <section>
-        <h2>Відео про нашу роботу</h2>
-        <p>Просто подивіться, як ми працюємо</p>
-        <video src=""></video>
-
-        <h3>Підпишіться на нашу розсилку</h3>
-        <p>Корисні статті, акції, новини - отримайте все це зараз!</p>
-        <form action=""></form>
-        <button>Підписатися</button>
-        <p>Ми не шлем спам, і не передаємо нікому ваші дані</p>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <ul>
-        <li>
-          <h3>Контактная информация</h3>
-          <a href="">test@test.ru</a><a href="">+3 8096 555 66 99</a
-          ><a href="">Тернопіль вул С. Бандери</a>
-        </li>
-        <li>
-          <h3>Основні посилання</h3>
-          <a href="">Головна</a><a href="">Наші проекти</a
-          ><a href="">Наші послуги</a><a href="">Контакти</a>
-        </li>
-        <li>
-          <h3>Наші проекти</h3>
-          <a href="">Укрпошта</a><a href="">Нафтогаз</a
-          ><a href="">Львівська пивоварня</a><a href="">ТЭЦ Калуша</a>
-        </li>
-        <li>
-          <h3>Соціальні мережі</h3>
-          <a href="">LinkedIn</a><a href="">Instagram</a><a href="">Facebook</a
-          ><a href="">Twitter</a>
-        </li>
-      </ul>
-      <b>(с) 2019. Всі права захищені</b>
-    </footer>
-
-    <!-- Java script -->
-
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+    </body>
 </html>

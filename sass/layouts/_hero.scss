@@ -1,20 +1,19 @@
 .hero {
-    padding: 150px 0 266px;
+    max-width: 100%;
+    max-height: 550px;
+    padding: 150px 0 215px;
     text-align: center;
     flex-grow: 1;
-
-    @include mobile-min {
-        max-width: 480px;
-        max-height: 500px;
-    }
+    margin: 0 auto;
 
     @include table-min {
-        padding: 259px 0 335px;
+        padding: 269px 0 285px;
         max-width: 768px;
         max-height: 700px;
     }
 
     @include desktop-min {
+        padding: 319px 0 335px;
         max-width: 1920px;
         max-height: 900px;
     }
