@@ -1,37 +1,37 @@
 .conteiner {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0 15px;
-  outline: 1px solid tomato;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid tomato;
 
-  @include table-min {
-    max-width: 768px;
-  }
+    @include table-min {
+        max-width: 768px;
+    }
 
-  @include desktop-min {
-    max-width: 1143px;
-  }
+    @include desktop-min {
+        max-width: 1143px;
+    }
 }
 
 // All properties
 
 .list {
-  list-style: none;
+    list-style: none;
 }
 
 .link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
