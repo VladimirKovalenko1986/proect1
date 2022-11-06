@@ -1,19 +1,16 @@
-.btn {
-    @include font(16px, 500, 1.3, 0em);
-
-    color: var(--color-primery-text);
-    background-color: var(--color-bg-btn-mobile-menu);
-
-    padding: 13px 36px 15px;
-    cursor: pointer;
-}
-
 .button {
+    @extend %btn;
     border-radius: 30px;
     width: 200px;
     height: 45px;
 
     transition: box-shadow 250ms linear;
+
+    &--centered {
+        @include table-min {
+            @include elment-centered;
+        }
+    }
 
     &:hover,
     &:focus {

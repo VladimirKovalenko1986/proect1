@@ -11,6 +11,10 @@
     @include desktop-min {
         max-width: 1143px;
     }
+
+    &--flex {
+        display: flex;
+    }
 }
 
 // All properties

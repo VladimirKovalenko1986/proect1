@@ -1,0 +1,87 @@
+.advances {
+    padding: 70px 0 50px 0;
+
+    @include table-min {
+        padding: 100px 0 90px 0;
+    }
+
+    &--bg {
+        background-color: var(--bgc-work);
+    }
+
+    &__wrapper {
+        @include table-min {
+            width: 600px;
+        }
+
+        @include desktop-min {
+            width: 429px;
+        }
+    }
+
+    &__title {
+        @include font(26px, 700, 1.5, 0em);
+
+        color: var(--color-title);
+
+        @include table-min {
+            @include font(36px, 700, 1.5, 0em);
+        }
+
+        &--moving-bottom {
+            margin-bottom: 30px;
+
+            @include table-min {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &__text {
+        @include font(12px, 400, 1.6, 0em);
+
+        color: var(--color-secondary-text);
+
+        @include table-min {
+            @include font(16px, 400, 1.6, 0em);
+        }
+
+        &--moving-bottom {
+            margin-bottom: 20px;
+
+            @include table-min {
+                margin-bottom: 42px;
+            }
+        }
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+
+        @include font(12px, 500, 1.3, 0em);
+
+        color: var(--color-bg-btn-mobile-menu);
+
+        @include table-min {
+            @include font(16px, 500, 1.3, 0em);
+        }
+
+        &--moving-bottom {
+            @include table-max {
+                margin-bottom: 30px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+
+            background-color: var(--color-bg-btn-mobile-menu);
+        }
+    }
+}
