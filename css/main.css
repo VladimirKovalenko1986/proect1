@@ -70,9 +70,6 @@ picture {
     max-width: 1143px;
   }
 }
-.conteiner--flex {
-  display: flex;
-}
 
 .list {
   list-style: none;
@@ -107,6 +104,11 @@ picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 1142px) {
+  .button--functional {
+    margin-bottom: 20px;
   }
 }
 .button:hover, .button:focus {
@@ -205,6 +207,7 @@ picture {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 269px 0 285px;
+    max-width: 768px;
     max-height: 700px;
   }
 }
@@ -459,7 +462,7 @@ picture {
 }
 @media screen and (min-width: 768px) {
   .advances {
-    padding: 100px 0 90px 0;
+    padding: 100px 0 70px 0;
   }
 }
 .advances--bg {
@@ -551,6 +554,192 @@ picture {
   width: 100%;
   height: 1px;
   background-color: var(--color-bg-btn-mobile-menu);
+}
+
+@media screen and (min-width: 1143px) {
+  .card-img {
+    margin-left: auto;
+  }
+}
+.card-img__pictures {
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+}
+@media screen and (min-width: 1143px) {
+  .card-img__pictures {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+.conteiner-border {
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--color-border-svg);
+}
+@media screen and (min-width: 1143px) {
+  .conteiner-border {
+    display: flex;
+    padding-bottom: 90px;
+  }
+}
+
+.projects {
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    width: calc((100% - 200px) / 5);
+  }
+  .projects__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1143px) {
+  .projects__item {
+    width: calc((100% - 400px) / 5);
+  }
+  .projects__item:not(:first-child) {
+    margin-left: 100px;
+  }
+}
+.projects__conteiner {
+  display: flex;
+  align-items: center;
+}
+.projects__svg {
+  fill: var(--color-bg-btn-mobile-menu);
+}
+.projects__text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  color: var(--color-pre-title);
+}
+.projects__text--moving-left {
+  margin-left: 20px;
+}
+.projects__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  color: var(--color-secondary-text);
+}
+
+.work {
+  padding: 0 0 50px;
+}
+@media screen and (min-width: 768px) {
+  .work {
+    padding: 0 0 85px;
+  }
+}
+.work__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  color: var(--color-primery-text);
+}
+@media screen and (min-width: 768px) {
+  .work__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+}
+@media screen and (max-width: 1142px) {
+  .work__title--moving-bottom {
+    margin-bottom: 20px;
+  }
+}
+.work__picture {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .work__img {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 1142px) {
+  .work__img {
+    width: 520px;
+  }
+}
+@media screen and (min-width: 1143px) {
+  .work__img {
+    width: 350px;
+  }
+}
+.work__pre-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 768px) {
+  .work__pre-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0em;
+  }
+}
+.work__pre-title--moving-bottom {
+  margin-bottom: 30px;
+}
+.work__color-blue {
+  color: var(--color-bg-btn-mobile-menu);
+}
+
+.work-wrapper {
+  max-width: 100vw;
+  max-height: 100vh;
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .work-wrapper {
+    max-width: 768px;
+    min-height: 300px;
+  }
+}
+@media screen and (min-width: 1143px) {
+  .work-wrapper {
+    max-width: 1920px;
+    min-height: 490px;
+  }
+}
+.work-wrapper--functional {
+  padding-top: 30px;
+}
+@media screen and (max-width: 1142px) {
+  .work-wrapper--functional {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1143px) {
+  .work-wrapper--functional {
+    padding-top: 100px;
+  }
 }
 
 .conteiner-menu {

@@ -1,0 +1,86 @@
+.work {
+    padding: 0 0 50px;
+    @include table-min {
+        padding: 0 0 85px;
+    }
+
+    &__title {
+        @include font(26px, 700, 1.5, 0em);
+
+        color: var(--color-primery-text);
+
+        @include table-min {
+            @include font(36px, 700, 1.5, 0em);
+        }
+
+        &--moving-bottom {
+            @include table-max {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__picture {
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        @include mobile-max {
+            width: 290px;
+        }
+
+        @include table-max {
+            width: 520px;
+        }
+
+        @include desktop-min {
+            width: 350px;
+        }
+    }
+
+    &__pre-title {
+        @include font(14px, 600, 1.2, 0em);
+
+        @include table-min {
+            @include font(18px, 600, 1.2, 0em);
+        }
+
+        &--moving-bottom {
+            margin-bottom: 30px;
+        }
+    }
+    &__color-blue {
+        color: var(--color-bg-btn-mobile-menu);
+    }
+}
+
+// Conteiner
+.work-wrapper {
+    max-width: 100vw;
+    max-height: 100vh;
+    background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+    background-size: cover;
+    margin: 0 auto;
+
+    @include table-min {
+        max-width: 768px;
+        min-height: 300px;
+    }
+
+    @include desktop-min {
+        max-width: 1920px;
+        min-height: 490px;
+    }
+
+    &--functional {
+        padding-top: 30px;
+
+        @include table-max {
+            margin-bottom: 30px;
+        }
+
+        @include desktop-min {
+            padding-top: 100px;
+        }
+    }
+}

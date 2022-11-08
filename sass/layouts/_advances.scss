@@ -2,7 +2,7 @@
     padding: 70px 0 50px 0;
 
     @include table-min {
-        padding: 100px 0 90px 0;
+        padding: 100px 0 70px 0;
     }
 
     &--bg {
@@ -83,5 +83,94 @@
 
             background-color: var(--color-bg-btn-mobile-menu);
         }
+    }
+}
+
+.card-img {
+    @include desktop-min {
+        margin-left: auto;
+    }
+    &__pictures {
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+
+        @include desktop-min {
+            width: 500px;
+            height: 400px;
+        }
+    }
+}
+
+// Conteiner from border
+.conteiner-border {
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--color-border-svg);
+
+    @include desktop-min {
+        display: flex;
+        padding-bottom: 90px;
+    }
+}
+
+//  List projects
+
+.projects {
+    margin-top: 20px;
+    @include mobile-max {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    @include table-min {
+        margin-top: 70px;
+        @include flex-centered;
+    }
+
+    &__item {
+        @include mobile-max {
+            &:not(:last-child) {
+                // margin-bottom: 10px;
+            }
+        }
+
+        @include table-min {
+            width: calc((100% - 200px) / 5);
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+        }
+
+        @include desktop-min {
+            width: calc((100% - 400px) / 5);
+            &:not(:first-child) {
+                margin-left: 100px;
+            }
+        }
+    }
+
+    &__conteiner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__svg {
+        fill: var(--color-bg-btn-mobile-menu);
+    }
+
+    &__text {
+        @include font(36px, 400, 1.5, 0em);
+
+        color: var(--color-pre-title);
+
+        &--moving-left {
+            margin-left: 20px;
+        }
+    }
+
+    &__link {
+        @include font(16px, 400, 1.6, 0em);
+
+        color: var(--color-secondary-text);
     }
 }
